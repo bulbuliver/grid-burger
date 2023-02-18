@@ -1,4 +1,270 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
+}
+
+.header-section {
+  width: 100%;
+  max-height: 825px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 144px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-areas: "hd-logo delivery" "hd-nav hd-nav";
+}
+
+.logo {
+  grid-area: hd-logo;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.delivery {
+  grid-area: delivery;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 13;
+}
+.delivery .moped_number {
+  display: grid;
+  grid-template-columns: 8fr 1fr 5fr;
+  align-items: center;
+  margin-left: -100px;
+}
+
+.background {
+  background-image: url(images/bg.png);
+  height: 700px;
+  width: 100vw;
+  position: absolute;
+  z-index: -100;
+}
+
+nav {
+  grid-area: hd-nav;
+  justify-self: flex-end;
+  font-family: "Bebas Neue", cursive;
+  align-self: center;
+  padding-right: 45px;
+}
+nav a {
+  text-decoration: none;
+  color: #3d2514;
+  font-size: 21px;
+  letter-spacing: 6px;
+  margin: 0 30px;
+}
+
+.header-text {
+  grid-area: hd-text;
+  margin-top: 150px;
+  margin-left: 60px;
+}
+
+.header-img {
+  grid-area: hd-img;
+}
+.header-img img {
+  width: 100%;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.block1 {
+  display: grid;
+  height: 656px;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-rows: 1fr;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.block1 .block1_right_side img {
+  position: relative;
+}
+
+.block1_left_side {
+  position: relative;
+  top: 170px;
+  left: 50px;
+  max-width: 420px;
+  height: 250px;
+}
+
+.block1_text1 {
+  color: #3d2514;
+  font-family: "Bebas Neue", cursive;
+  border: 2px dashed #3d2514;
+  font-size: 24px;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 5px;
+  left: 60px;
+}
+
+.burger {
+  font-size: 114px;
+  color: #3d2514;
+  display: inline-block;
+  left: 60px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.week {
+  font-size: 56px;
+  display: inline-block;
+  left: 60px;
+  color: #3d2514;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.burger_image1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  display: grid;
+  place-items: center;
+}
+
+.burger_image2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: grid;
+  place-items: center;
+  margin-bottom: -40px;
+}
+
+.burger_image3 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: grid;
+  place-items: center;
+  margin-top: -40px;
+}
+
+.block2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  height: 550px;
+}
+
+.block3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80fr 180fr 645fr;
+  justify-content: center;
+  height: 900px;
+}
+.block3 .always {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: grid;
+  place-items: center;
+}
+.block3 .always button {
+  color: #3d2514;
+  background-color: #ffc045;
+  border: none;
+  width: 220px;
+  height: 50px;
+}
+.block3 .burger_1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.oreder_now {
+  width: 200px;
+  height: 60px;
+  color: white;
+  background-color: #bf2222;
+  border: none;
+}
+
+.burer_name {
+  color: #3d2514;
+  font-family: "Bebas Neue", cursive;
+  font-size: 37px;
+  margin: 35px 0px;
+}
+
+.burger_text {
+  color: #3d2514;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  margin: 0px 30px 30px 30px;
+}
+
+.choose {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-left: 180px;
+  padding-right: 180px;
+  line-height: 2;
+}
+
+.choose_enjoy {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 50px;
+  color: #3d2514;
+}
+
+.choose_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  color: #3d2514;
+}
+
+.burger_2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.burger_2 img {
+  width: 342px;
+  height: 271px;
+}
+
+.burger_3 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  display: grid;
+  place-items: center;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
