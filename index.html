@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title>My_Burger</title>
   </head>
   <body>
@@ -120,14 +124,47 @@
           possimel consequuntur fugit! Delectus animi minus assumenda facilis!
           Sint.
         </div>
-        <div class="burger_image4">
+
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="images/Burger Image4.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/Burger Image4.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/Burger Image4.png" alt="" />
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <!-- <div class="burger_image4">
+          <img src="images/Burger Image4.png" alt="" />
+        </div> -->
+
+        <!-- <div class="burger_image4">
           <img src="images/Burger Image4.png" alt="" />
         </div>
         <div class="slider_dots">
           <div class="dot"></div>
           <div class="dot"></div>
           <div class="dot"></div>
-        </div>
+        </div> -->
+        <!--  -->
+
+        <!--  -->
       </div>
       <div class="block5 container">
         <div class="bottle"></div>
@@ -183,6 +220,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="app.js"></script>
   </body>
